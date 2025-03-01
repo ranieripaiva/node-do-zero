@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Video Java",
+    "description": "Video sobre Java",
+    "duration": 160
+}
+
+###//psql -h pg.neon.tech
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/137b756d-996f-40c2-acd8-dea2dcd1c8c7
+Content-Type: application/json
+
+{
+    "title": "Video Flask",
+    "description": "Video sobre Flask",
+    "duration": 140
+}
+
+###
+
+DELETE http://localhost:3333/videos/92db147e-db21-495e-b26f-c7f445f0cb54
